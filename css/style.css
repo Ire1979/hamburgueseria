@@ -184,18 +184,47 @@ header nav .container .menu li :is(a:hover, .activo) {
     font-size: 2em;
 }
 
-/* inicio hero */
+/* fin hero */
 
-/* inicio main */
+/* inicio ourservices */
+
+main section {
+    padding: 2.125em 1.5em;
+}
+
+main section h2 {
+    color: black;
+    font-family: var(--fuentetitulos);
+    font-size: 2em;
+    text-align: center;
+}
+
+main section h2 span {
+    color: var(--colorprincipal);
+}
+
+main .underline {
+    position: relative;
+    width: 6.250em;
+    margin: 0 auto;
+    color: var(--colorprincipal);
+    font-weight: 700;
+    text-align: center;
+}
+
+main section .underline span {
+    position: absolute;
+    top: -0.4em;
+
+}
+
+main section .underline hr {
+    border-color: var(--colorprincipal);
+}
+
+/* fin ourservices */
 
 
-
-
-
-
-
-
-/* fin main */
 
 /* inicio footer */
 
