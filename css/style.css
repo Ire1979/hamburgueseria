@@ -362,13 +362,7 @@ footer a:hover {
         width: 100%;
     }
 
-    main section .flex {
-        flex-direction: row;
-    }
 
-    main section .flex .imagen {
-        margin: 0 2.5em;
-    }
 
 
 }
@@ -386,6 +380,18 @@ footer a:hover {
 
     main section .grid :is(article, article:last-child) {
         width: 33.333%;
+    }
+
+    main section .flex {
+        flex-direction: row;
+    }
+
+    main section .flex .imagen {
+        margin: 0 2.5em;
+    }
+
+    main section .flex {
+        margin-top: 2.5em;
     }
 
 }
