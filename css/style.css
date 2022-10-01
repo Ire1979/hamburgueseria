@@ -116,10 +116,42 @@ header nav .container .menu li :is(a:hover, .activo) {
 
 /* fin header */
 
+/* inicio footer */
+
+footer {
+    background-color: var(--colorsecundario);
+    padding: 1.25em 0em;
+    text-align: center;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    color: var(--colorprincipal);
+}
+
+/* fin footer */
+
+.flecha a {
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 1.25em;
+    right: 0.25em;
+    font-size: 300%;
+}
+
 /* inicio hero */
 
 .hero {
-    /* linear-gradient (rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)). No funciona en todos los navegadores */
+    /* linear-gradient no funciona en todos los navegadores */
     background-image: url(../images/fondo.jpg);
     height: 60vh;
     background-size: cover;
@@ -203,7 +235,7 @@ main section h2 span {
     color: var(--colorprincipal);
 }
 
-main .underline {
+main section .underline {
     position: relative;
     width: 6.250em;
     margin: 0 auto;
@@ -215,6 +247,7 @@ main .underline {
 main section .underline span {
     position: absolute;
     transform: translate(-50%, -100%);
+    /* top: -0.4em; */
 }
 
 main section .underline hr {
@@ -232,7 +265,7 @@ main section .grid article {
     padding: 1.5em 0;
 }
 
-main section article>div .fa-solid {
+main section#ourservices article>div .fa-solid {
     border: 1px solid var(--colorprincipal);
     padding: 0.75em;
     color: var(--colorprincipal);
@@ -252,7 +285,7 @@ main p {
 }
 
 main section article p {
-    margin-bottom: 0.5em;
+    margin-bottom: 1em;
 }
 
 .enlace {
@@ -275,7 +308,6 @@ main #aboutus {
 main section .flex {
     display: flex;
     flex-direction: column;
-    margin-top: 2.5em;
 }
 
 main section .flex h3 {
@@ -310,40 +342,50 @@ main section .flex .imagen:hover :is(.marco, .marco img) {
 
 /* fin aboutus */
 
+/* inicio blogs */
 
+main section#ourblogs .grid {
+    margin: 2em 0em 4em;
+}
 
-/* inicio footer */
+main section#ourblogs .grid article {
+    position: relative;
+    width: 50%;
+    border: none;
+    padding: 1em;
+}
 
-footer {
-    background-color: var(--colorsecundario);
-    padding: 1.25em 0em;
+main section#ourblogs .grid .fecha {
+    position: absolute;
+    width: 4.375em;
+    height: 4.375em;
+    background-color: rgba(250, 87, 58, 0.9);
+    /* color principal convertido a rgba para darle opacidad */
+    color: white;
+    font-size: 120%;
     text-align: center;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    font-weight: 700;
+    line-height: 1.5em;
+    padding: 0.5em 1em;
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
+main section#ourblogs .grid article div:last-child {
+    padding: 1em;
 }
 
-footer a:hover {
+main section#ourblogs h4 {
     color: var(--colorprincipal);
+    margin: var(--margingrid) 0;
+    font-weight: 700;
 }
 
-/* fin footer */
 
-.flecha a {
-    display: block;
-    color: var(--colorprincipal);
-    position: fixed;
-    bottom: 1.25em;
-    right: 0.25em;
-    font-size: 300%;
-}
 
+
+
+
+
+/* fin blogs */
 
 /* mediaqueries */
 
@@ -362,9 +404,13 @@ footer a:hover {
         width: 100%;
     }
 
+    main #ourblogs .grid article {
+        width: 50%;
+        border-bottom: none;
 
 
 
+    }
 }
 
 @media(min-width: 48em) {
@@ -415,5 +461,9 @@ footer a:hover {
 
     header nav .container .menu li {
         display: inline-block;
+    }
+
+    main section#ourblogs .grid article {
+        width: 33.333%;
     }
 }
