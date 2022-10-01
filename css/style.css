@@ -379,13 +379,86 @@ main section#ourblogs h4 {
     font-weight: 700;
 }
 
-
-
-
-
-
-
 /* fin blogs */
+
+/* inicio menu */
+
+main section#menu {
+    background-color: var(--colorsecundario);
+}
+
+main section#menu h2 {
+    color: white;
+}
+
+main section#menu .grid {
+    margin: 4em 0em;
+}
+
+main aside ul li {
+    padding: 1em;
+}
+
+main aside ul li.activo {
+    background-color: var(--colorprincipal);
+    border-radius: 0.250em;
+}
+
+main aside ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main aside h3 {
+    color: white;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding-bottom: 0.25em;
+}
+
+main aside div {
+    margin: 3em 0em 1em;
+}
+
+main aside div hr {
+    width: 4em;
+    border-color: var(--colorprincipal);
+    margin-left: 0;
+}
+
+main section#menu p {
+    color: #ccc;
+}
+
+main section#menu .grid article {
+    border: none;
+    padding: 1.5em 1em;
+}
+
+main section#menu article h4 {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin: 1em 0em 0.5em;
+}
+
+main section#menu article h4 span {
+    color: var(--colorprincipal);
+    font-weight: 400;
+    margin-left: 1em;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* fin menu */
 
 /* mediaqueries */
 
@@ -407,10 +480,8 @@ main section#ourblogs h4 {
     main #ourblogs .grid article {
         width: 50%;
         border-bottom: none;
-
-
-
     }
+
 }
 
 @media(min-width: 48em) {
@@ -466,4 +537,5 @@ main section#ourblogs h4 {
     main section#ourblogs .grid article {
         width: 33.333%;
     }
+
 }
