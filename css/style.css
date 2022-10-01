@@ -411,7 +411,7 @@ main aside ul li a {
 
 main aside h3 {
     color: white;
-    font-size: 1.25em;
+    font-size: 1.15em;
     font-weight: 700;
     padding-bottom: 0.25em;
 }
@@ -437,7 +437,7 @@ main section#menu .grid article {
 
 main section#menu article h4 {
     color: white;
-    font-size: 1.3em;
+    font-size: 1.25em;
     font-weight: 700;
     margin: 1em 0em 0.5em;
 }
@@ -448,17 +448,8 @@ main section#menu article h4 span {
     margin-left: 1em;
 }
 
-
-
-
-
-
-
-
-
-
-
 /* fin menu */
+
 
 /* mediaqueries */
 
@@ -511,6 +502,10 @@ main section#menu article h4 span {
         margin-top: 2.5em;
     }
 
+    main section#menu .grid article {
+        width: 100%;
+    }
+
 }
 
 @media(min-width: 62.75em) {
@@ -537,5 +532,30 @@ main section#menu article h4 span {
     main section#ourblogs .grid article {
         width: 33.333%;
     }
+
+    main section#menu .grid {
+        justify-content: space-around;
+    }
+
+    main section#menu .grid aside {
+        width: 20%;
+    }
+
+    main section#menu .grid>div {
+        width: 63%;
+
+    }
+
+    main section#menu article.flex figure {
+        width: 25%;
+    }
+
+    main section#menu article.flex>div {
+        width: 75%;
+    }
+
+
+
+
 
 }
