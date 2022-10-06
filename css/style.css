@@ -435,6 +435,11 @@ main section#menu .grid article {
     padding: 1.5em 1em;
 }
 
+main section#menu .grid article .flex {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 main section#menu article h4 {
     color: white;
     font-size: 1.2em;
@@ -442,10 +447,11 @@ main section#menu article h4 {
     margin: 1em 0em 0.5em;
 }
 
-main section#menu article h4 span {
+main section#menu article .precio {
     color: var(--colorprincipal);
+    font-size: 1.2em;
     font-weight: 400;
-    margin-left: 1em;
+    margin: 1em 0em 0.5em;
 }
 
 /* fin menu */
@@ -471,6 +477,10 @@ main section#menu article h4 span {
     main #ourblogs .grid article {
         width: 50%;
         border-bottom: none;
+    }
+
+    main section#menu .grid article {
+        width: 100%;
     }
 
 }
@@ -514,7 +524,9 @@ main section#menu article h4 span {
         padding: 0em 1.25em;
     }
 
-
+    main section#menu article.flex div {
+        margin-top: 0;
+    }
 
     main section#menu article.flex>div {
         width: 75%;
@@ -523,9 +535,6 @@ main section#menu article h4 span {
     main section#menu article h4 {
         margin-top: 0;
     }
-
-
-
 }
 
 @media(min-width: 62.75em) {
@@ -565,5 +574,4 @@ main section#menu article h4 span {
         width: 65%;
 
     }
-
 }
